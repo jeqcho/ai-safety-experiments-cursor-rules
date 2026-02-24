@@ -15,3 +15,5 @@ When running a tmux, check back in 2 minutes (preferably less) and provide the u
 Update the README if relevant.
 
 After you have completed a Build Plan and it is ready for the user to review, run this sound `afplay /System/Library/Sounds/Blow.aiff` to alert the user. Only do this on Mac. You can ignore this if you are not on a Mac.
+
+If there are new files to be added during planning, show the file tree to the user with the new files.
