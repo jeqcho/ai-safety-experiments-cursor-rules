@@ -15,3 +15,13 @@ When running a tmux, check back in 2 minutes (preferably less) and provide the u
 Update the README if relevant.
 
 If there are new files to be added during planning, show the file tree to the user with the new files.
+
+## Waiting / Polling
+
+When you need to wait or sleep for a period of time, NEVER use `sleep`.
+Instead, use `wait-progress <seconds> [optional message]`, which prints
+progress every 60 seconds so the user can see elapsed time.
+
+Examples:
+- `wait-progress 300 "Waiting for server to start"`
+- `wait-progress 600 "Training job cooldown"`
